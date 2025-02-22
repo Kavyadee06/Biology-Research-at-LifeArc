@@ -9,7 +9,7 @@ Job : Learn how to optimise experimental conditions, analyse data to determine o
 7. Formulate conclusions and recommendations based on the data.
 
 
-As a researcher at LifeArc, I had the opportunity to gain hands-on experience in the fundamentals of scientific research. In the initial phase of this role, I worked on designing a multiplexed experiment to optimize an in vitro neuronal differentiation protocol. The platform provided a structured approach to learning, promoting efficiency and effectiveness through step-by-step guidance and a diverse collection of tools and content.
+As a Associate scientist at LifeArc, I had the opportunity to gain hands-on experience in the fundamentals of scientific research. In the initial phase of this role, I worked on designing a multiplexed experiment to optimize an in vitro neuronal differentiation protocol. The platform provided a structured approach to learning, promoting efficiency and effectiveness through step-by-step guidance and a diverse collection of tools and content.
 
 This part-time experience not only allowed me to work independently but also expanded my understanding of various techniques and subject areas. The knowledge I acquired has been invaluable, significantly enhancing the quality of my practical work at the university.
 
