@@ -392,6 +392,7 @@ Step 7 : Plot the predictions
 >plot(allEffects(mod))
 >
 
+ 
 
 
 
