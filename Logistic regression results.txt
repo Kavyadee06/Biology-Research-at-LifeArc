@@ -1,0 +1,110 @@
+******* Regression analysis results ********
+
+*** The full dataset ***
+
+## glm(formula = fractMAP2 ~ NGN2_MOI + NT3_ng, family = binomial(link = "logit"), 
+##     data = data, weights = rep(10000, nrow(data)))
+## 
+## Deviance Residuals: 
+##      Min        1Q    Median        3Q       Max  
+## -18.2885   -2.1286    0.5841    2.5317    8.0978  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(>|z|)    
+## (Intercept) -6.30098    0.08862  -71.10   <2e-16 ***
+## NGN2_MOI2    2.12408    0.09307   22.82   <2e-16 ***
+## NGN2_MOI5    3.97231    0.08883   44.72   <2e-16 ***
+## NGN2_MOI10   3.11278    0.08992   34.62   <2e-16 ***
+## NT3_ng10     0.31290    0.02084   15.02   <2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 10204.34  on 23  degrees of freedom
+## Residual deviance:   712.97  on 19  degrees of freedom
+## AIC: 890.95
+## 
+## Number of Fisher Scoring iterations: 5
+
+*** The full dataset, using 5 MOI as the reference level for NGN2 treatment ***
+
+## glm(formula = fractMAP2 ~ NGN2_MOI + NT3_ng, family = binomial(link = "logit"), 
+##     data = data, weights = rep(10000, nrow(data)))
+## 
+## Deviance Residuals: 
+##      Min        1Q    Median        3Q       Max  
+## -18.2885   -2.1286    0.5841    2.5317    8.0978  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(>|z|)    
+## (Intercept) -2.32867    0.01782 -130.66   <2e-16 ***
+## NGN2_MOI0   -3.97231    0.08883  -44.72   <2e-16 ***
+## NGN2_MOI2   -1.84823    0.03365  -54.92   <2e-16 ***
+## NGN2_MOI10  -0.85953    0.02360  -36.42   <2e-16 ***
+## NT3_ng10     0.31290    0.02084   15.02   <2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 10204.34  on 23  degrees of freedom
+## Residual deviance:   712.97  on 19  degrees of freedom
+## AIC: 890.95
+## 
+## Number of Fisher Scoring iterations: 5
+
+*** Dataset with the outlying 2 MOI replicate removed ***
+
+## glm(formula = fractMAP2 ~ NGN2_MOI + NT3_ng, family = binomial(link = "logit"), 
+##     data = dataFilt, weights = rep(10000, nrow(dataFilt)))
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -9.1498  -2.2314  -0.1182   2.1493   7.0284  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(>|z|)    
+## (Intercept) -6.32706    0.08866  -71.36   <2e-16 ***
+## NGN2_MOI2    2.33672    0.09316   25.08   <2e-16 ***
+## NGN2_MOI5    3.97305    0.08883   44.73   <2e-16 ***
+## NGN2_MOI10   3.11310    0.08992   34.62   <2e-16 ***
+## NT3_ng10     0.35765    0.02088   17.13   <2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 9415.18  on 22  degrees of freedom
+## Residual deviance:  331.88  on 18  degrees of freedom
+## AIC: 505.7
+## 
+## Number of Fisher Scoring iterations: 4
+
+*** Dataset with the outlying 2 MOI replicate removed, using 5 MOI as the reference level for NGN2 treatment ***
+
+## Call:
+## glm(formula = fractMAP2 ~ NGN2_MOI + NT3_ng, family = binomial(link = "logit"), 
+##     data = dataFilt, weights = rep(10000, nrow(dataFilt)))
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -9.1498  -2.2314  -0.1182   2.1493   7.0284  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(>|z|)    
+## (Intercept) -2.35401    0.01796 -131.06   <2e-16 ***
+## NGN2_MOI0   -3.97305    0.08883  -44.73   <2e-16 ***
+## NGN2_MOI2   -1.63633    0.03389  -48.29   <2e-16 ***
+## NGN2_MOI10  -0.85995    0.02360  -36.43   <2e-16 ***
+## NT3_ng10     0.35765    0.02088   17.13   <2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 9415.18  on 22  degrees of freedom
+## Residual deviance:  331.88  on 18  degrees of freedom
+## AIC: 505.7
+## 
+## Number of Fisher Scoring iterations: 4
